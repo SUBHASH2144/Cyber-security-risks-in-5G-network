@@ -1,0 +1,169 @@
+{
+  "attack_scenarios": [
+    {
+      "scenario_id": "SCENARIO-001",
+      "name": "Distributed DDoS Attack",
+      "description": "Multiple attackers targeting core network functions with high-volume traffic",
+      "attack_type": "DDoS",
+      "severity": "HIGH",
+      "duration": 300,
+      "parameters": {
+        "attackers": 50,
+        "target_nodes": ["gNB-001", "AMF-001", "UPF-001"],
+        "packet_rate": 5000,
+        "data_volume": 250000
+      },
+      "expected_impact": {
+        "network_availability": 0.3,
+        "latency_increase": 5.0,
+        "packet_loss": 0.4
+      }
+    },
+    {
+      "scenario_id": "SCENARIO-002",
+      "name": "Signal Jamming Attack",
+      "description": "Radio frequency jamming targeting specific geographic areas",
+      "attack_type": "Jamming",
+      "severity": "MEDIUM",
+      "duration": 180,
+      "parameters": {
+        "jamming_area": [1, 1],
+        "radius": 0.5,
+        "signal_strength_reduction": 0.7,
+        "affected_frequencies": ["2.4GHz", "5GHz"]
+      },
+      "expected_impact": {
+        "coverage_reduction": 0.6,
+        "signal_quality": 0.2,
+        "connection_drops": 0.8
+      }
+    },
+    {
+      "scenario_id": "SCENARIO-003",
+      "name": "Man-in-the-Middle Attack",
+      "description": "Interception and modification of user communications",
+      "attack_type": "MITM",
+      "severity": "CRITICAL",
+      "duration": 600,
+      "parameters": {
+        "target_connections": [
+          ["UE-001", "gNB-001"],
+          ["UE-002", "gNB-002"]
+        ],
+        "interception_rate": 0.8,
+        "data_modification": true,
+        "encryption_bypass": false
+      },
+      "expected_impact": {
+        "data_integrity": 0.2,
+        "privacy_breach": 0.9,
+        "authentication_bypass": 0.3
+      }
+    },
+    {
+      "scenario_id": "SCENARIO-004",
+      "name": "Rogue Base Station Attack",
+      "description": "Deployment of unauthorized base stations to intercept traffic",
+      "attack_type": "Spoofing",
+      "severity": "HIGH",
+      "duration": 900,
+      "parameters": {
+        "rogue_stations": 3,
+        "location_spoofing": true,
+        "signal_amplification": 2.0,
+        "traffic_redirection": true
+      },
+      "expected_impact": {
+        "unauthorized_access": 0.7,
+        "traffic_interception": 0.8,
+        "location_tracking": 0.9
+      }
+    },
+    {
+      "scenario_id": "SCENARIO-005",
+      "name": "Core Network Infiltration",
+      "description": "Advanced persistent threat targeting core network functions",
+      "attack_type": "APT",
+      "severity": "CRITICAL",
+      "duration": 3600,
+      "parameters": {
+        "target_functions": ["AMF-001", "SMF-001", "UDM-001"],
+        "persistence_level": 0.9,
+        "lateral_movement": true,
+        "data_exfiltration": true
+      },
+      "expected_impact": {
+        "system_compromise": 0.8,
+        "data_breach": 0.9,
+        "service_disruption": 0.6
+      }
+    }
+  ],
+  "mitigation_strategies": {
+    "ddos_mitigation": {
+      "rate_limiting": {
+        "enabled": true,
+        "threshold": 1000,
+        "action": "drop"
+      },
+      "traffic_filtering": {
+        "enabled": true,
+        "blacklist_sources": true,
+        "whitelist_legitimate": true
+      },
+      "load_balancing": {
+        "enabled": true,
+        "distribution_algorithm": "round_robin",
+        "health_check_interval": 30
+      }
+    },
+    "jamming_mitigation": {
+      "frequency_hopping": {
+        "enabled": true,
+        "hop_interval": 1,
+        "frequency_range": ["2.4GHz", "5GHz", "6GHz"]
+      },
+      "power_control": {
+        "enabled": true,
+        "adaptive_power": true,
+        "max_power_increase": 2.0
+      },
+      "antenna_diversity": {
+        "enabled": true,
+        "antenna_count": 4,
+        "switching_algorithm": "max_ratio"
+      }
+    },
+    "mitm_mitigation": {
+      "certificate_validation": {
+        "enabled": true,
+        "strict_validation": true,
+        "certificate_pinning": true
+      },
+      "encryption": {
+        "enabled": true,
+        "algorithm": "AES-256",
+        "key_rotation": 3600
+      },
+      "traffic_inspection": {
+        "enabled": true,
+        "deep_packet_inspection": true,
+        "anomaly_detection": true
+      }
+    }
+  },
+  "detection_metrics": {
+    "performance_targets": {
+      "detection_accuracy": 0.85,
+      "false_positive_rate": 0.05,
+      "detection_latency": 5.0,
+      "mitigation_effectiveness": 0.8
+    },
+    "monitoring_intervals": {
+      "traffic_analysis": 1,
+      "security_scan": 60,
+      "performance_check": 30,
+      "threat_intelligence": 300
+    }
+  }
+}

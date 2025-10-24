@@ -1,0 +1,107 @@
+[
+  {
+    "timestamp": "2024-01-15T10:00:00Z",
+    "source": "UE-001",
+    "destination": "gNB-001",
+    "packet_count": 45,
+    "data_volume": 2340,
+    "latency": 12.5,
+    "signal_strength": 0.87,
+    "is_attack": false
+  },
+  {
+    "timestamp": "2024-01-15T10:00:01Z",
+    "source": "UE-002",
+    "destination": "gNB-002",
+    "packet_count": 67,
+    "data_volume": 3456,
+    "latency": 8.3,
+    "signal_strength": 0.92,
+    "is_attack": false
+  },
+  {
+    "timestamp": "2024-01-15T10:00:02Z",
+    "source": "UE-003",
+    "destination": "gNB-001",
+    "packet_count": 23,
+    "data_volume": 1234,
+    "latency": 15.7,
+    "signal_strength": 0.78,
+    "is_attack": false
+  },
+  {
+    "timestamp": "2024-01-15T10:00:03Z",
+    "source": "ATTACKER-001",
+    "destination": "gNB-001",
+    "packet_count": 2500,
+    "data_volume": 125000,
+    "latency": 150.2,
+    "signal_strength": 0.25,
+    "is_attack": true,
+    "attack_type": "DDoS"
+  },
+  {
+    "timestamp": "2024-01-15T10:00:04Z",
+    "source": "ATTACKER-002",
+    "destination": "gNB-001",
+    "packet_count": 3200,
+    "data_volume": 160000,
+    "latency": 200.8,
+    "signal_strength": 0.18,
+    "is_attack": true,
+    "attack_type": "DDoS"
+  },
+  {
+    "timestamp": "2024-01-15T10:00:05Z",
+    "source": "UE-004",
+    "destination": "gNB-003",
+    "packet_count": 34,
+    "data_volume": 1789,
+    "latency": 9.1,
+    "signal_strength": 0.15,
+    "is_attack": false
+  },
+  {
+    "timestamp": "2024-01-15T10:00:06Z",
+    "source": "UE-001",
+    "destination": "gNB-001",
+    "packet_count": 89,
+    "data_volume": 4567,
+    "latency": 45.3,
+    "signal_strength": 0.65,
+    "is_attack": true,
+    "attack_type": "MITM",
+    "anomaly_score": 0.85
+  },
+  {
+    "timestamp": "2024-01-15T10:00:07Z",
+    "source": "UE-005",
+    "destination": "gNB-004",
+    "packet_count": 12,
+    "data_volume": 567,
+    "latency": 22.4,
+    "signal_strength": 0.28,
+    "is_attack": false
+  },
+  {
+    "timestamp": "2024-01-15T10:00:08Z",
+    "source": "UE-006",
+    "destination": "gNB-002",
+    "packet_count": 56,
+    "data_volume": 2890,
+    "latency": 11.2,
+    "signal_strength": 0.31,
+    "is_attack": false
+  },
+  {
+    "timestamp": "2024-01-15T10:00:09Z",
+    "source": "SPOOFER-001",
+    "destination": "gNB-001",
+    "packet_count": 150,
+    "data_volume": 7500,
+    "latency": 8.9,
+    "signal_strength": 0.88,
+    "is_attack": true,
+    "attack_type": "Spoofing"
+  }
+]

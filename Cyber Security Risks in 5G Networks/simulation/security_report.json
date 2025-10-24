@@ -1,0 +1,41 @@
+{
+  "summary": {
+    "total_security_events": 3,
+    "total_traffic_records": 131,
+    "attack_traffic_percentage": 8.396946564885496,
+    "network_nodes": 13
+  },
+  "threat_distribution": {
+    "DDoS Attack": 1,
+    "Jamming Attack": 1,
+    "Man-in-the-Middle": 1
+  },
+  "severity_distribution": {
+    "3": 1,
+    "2": 1,
+    "4": 1
+  },
+  "recent_events": [
+    {
+      "event_id": "DDOS-1761269752",
+      "timestamp": "2025-10-24T07:05:52.334395",
+      "threat_type": "DDoS Attack",
+      "severity": 3,
+      "description": "DDoS attack with 26838 packets over 10 seconds"
+    },
+    {
+      "event_id": "JAM-1761269752",
+      "timestamp": "2025-10-24T07:05:52.334822",
+      "threat_type": "Jamming Attack",
+      "severity": 2,
+      "description": "Jamming attack affecting 1 nodes"
+    },
+    {
+      "event_id": "MITM-1761269752",
+      "timestamp": "2025-10-24T07:05:52.335127",
+      "threat_type": "Man-in-the-Middle",
+      "severity": 4,
+      "description": "Man-in-the-middle attack detected"
+    }
+  ]
+}

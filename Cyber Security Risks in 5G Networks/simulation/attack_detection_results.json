@@ -1,0 +1,201 @@
+{
+  "ddos_attacks": [
+    {
+      "attack_type": "DDoS",
+      "timestamp": "2025-10-24 07:07:00",
+      "severity": "HIGH",
+      "metrics": {
+        "total_packets": 2846,
+        "unique_sources": 10,
+        "avg_packet_size": 518.290909090909
+      },
+      "confidence": 1.0
+    },
+    {
+      "attack_type": "DDoS",
+      "timestamp": "2025-10-24 07:08:00",
+      "severity": "HIGH",
+      "metrics": {
+        "total_packets": 45127,
+        "unique_sources": 25,
+        "avg_packet_size": 7559.35
+      },
+      "confidence": 1.0
+    },
+    {
+      "attack_type": "DDoS",
+      "timestamp": "2025-10-24 07:09:00",
+      "severity": "HIGH",
+      "metrics": {
+        "total_packets": 14462,
+        "unique_sources": 5,
+        "avg_packet_size": 27629.6
+      },
+      "confidence": 1.0
+    }
+  ],
+  "jamming_attacks": [
+    {
+      "attack_type": "Jamming",
+      "timestamp": "2025-10-24 07:08:00",
+      "severity": "MEDIUM",
+      "metrics": {
+        "avg_signal_strength": 0.7046055155722872,
+        "min_signal_strength": 0.12725979825403913,
+        "signal_variance": 0.07402985451379111
+      },
+      "confidence": 0.29539448442771277
+    },
+    {
+      "attack_type": "Jamming",
+      "timestamp": "2025-10-24 07:09:00",
+      "severity": "MEDIUM",
+      "metrics": {
+        "avg_signal_strength": 0.25461432820984065,
+        "min_signal_strength": 0.10577620595022974,
+        "signal_variance": 0.01349574421741041
+      },
+      "confidence": 0.7453856717901594
+    }
+  ],
+  "mitm_attacks": [
+    {
+      "attack_type": "MITM",
+      "timestamp": "2025-10-24 07:08:48.720590",
+      "severity": "CRITICAL",
+      "metrics": {
+        "anomaly_score": 0.6261107520903182,
+        "packet_count": 4124,
+        "latency": 353.8521661664533
+      },
+      "confidence": 0.6261107520903182
+    },
+    {
+      "attack_type": "MITM",
+      "timestamp": "2025-10-24 07:08:49.720590",
+      "severity": "CRITICAL",
+      "metrics": {
+        "anomaly_score": 0.6219378853764826,
+        "packet_count": 2283,
+        "latency": 295.3039769902284
+      },
+      "confidence": 0.6219378853764826
+    },
+    {
+      "attack_type": "MITM",
+      "timestamp": "2025-10-24 07:08:50.720590",
+      "severity": "CRITICAL",
+      "metrics": {
+        "anomaly_score": 0.6457679738088304,
+        "packet_count": 3763,
+        "latency": 380.8700430722256
+      },
+      "confidence": 0.6457679738088304
+    },
+    {
+      "attack_type": "MITM",
+      "timestamp": "2025-10-24 07:08:51.720590",
+      "severity": "CRITICAL",
+      "metrics": {
+        "anomaly_score": 0.6539159985285034,
+        "packet_count": 4316,
+        "latency": 172.47704991043196
+      },
+      "confidence": 0.6539159985285034
+    },
+    {
+      "attack_type": "MITM",
+      "timestamp": "2025-10-24 07:08:52.720590",
+      "severity": "CRITICAL",
+      "metrics": {
+        "anomaly_score": 0.6373516590867294,
+        "packet_count": 1704,
+        "latency": 150.1741257419161
+      },
+      "confidence": 0.6373516590867294
+    },
+    {
+      "attack_type": "MITM",
+      "timestamp": "2025-10-24 07:08:53.720590",
+      "severity": "CRITICAL",
+      "metrics": {
+        "anomaly_score": 0.6311554018371922,
+        "packet_count": 1301,
+        "latency": 219.26995967288713
+      },
+      "confidence": 0.6311554018371922
+    },
+    {
+      "attack_type": "MITM",
+      "timestamp": "2025-10-24 07:08:54.720590",
+      "severity": "CRITICAL",
+      "metrics": {
+        "anomaly_score": 0.6685895381772442,
+        "packet_count": 1287,
+        "latency": 478.9034356400125
+      },
+      "confidence": 0.6685895381772442
+    },
+    {
+      "attack_type": "MITM",
+      "timestamp": "2025-10-24 07:08:57.720590",
+      "severity": "CRITICAL",
+      "metrics": {
+        "anomaly_score": 0.6822830108923547,
+        "packet_count": 4428,
+        "latency": 372.368002591105
+      },
+      "confidence": 0.6822830108923547
+    },
+    {
+      "attack_type": "MITM",
+      "timestamp": "2025-10-24 07:08:59.720590",
+      "severity": "CRITICAL",
+      "metrics": {
+        "anomaly_score": 0.6204117221850365,
+        "packet_count": 2778,
+        "latency": 137.51094711248797
+      },
+      "confidence": 0.6204117221850365
+    },
+    {
+      "attack_type": "MITM",
+      "timestamp": "2025-10-24 07:09:00.720590",
+      "severity": "CRITICAL",
+      "metrics": {
+        "anomaly_score": 0.6673918785980154,
+        "packet_count": 3146,
+        "latency": 299.2696372655361
+      },
+      "confidence": 0.6673918785980154
+    },
+    {
+      "attack_type": "MITM",
+      "timestamp": "2025-10-24 07:09:02.720590",
+      "severity": "CRITICAL",
+      "metrics": {
+        "anomaly_score": 0.6443090400822131,
+        "packet_count": 1744,
+        "latency": 122.47415608714296
+      },
+      "confidence": 0.6443090400822131
+    },
+    {
+      "attack_type": "MITM",
+      "timestamp": "2025-10-24 07:09:04.720590",
+      "severity": "CRITICAL",
+      "metrics": {
+        "anomaly_score": 0.6398519927201493,
+        "packet_count": 2671,
+        "latency": 466.7768138875602
+      },
+      "confidence": 0.6398519927201493
+    }
+  ],
+  "spoofing_attacks": [],
+  "summary": {
+    "total_attacks": 17,
+    "detection_timestamp": "2025-10-24T07:07:05.923545",
+    "traffic_records_analyzed": 120
+  }
+}
